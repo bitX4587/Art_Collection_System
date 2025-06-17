@@ -1,0 +1,48 @@
+.bg-wood {
+  background-image: url("wood.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
+}
+
+.bg-wood-text {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.bg-wood-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("wood.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: blur(7px);
+  transform: scale(1.1);
+  z-index: 0;
+
+  opacity: 0.55;
+}
+
+.bg-wood-text span {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-museum {
+  background-image: url("museum3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: high-quality;
+}
